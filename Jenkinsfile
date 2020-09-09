@@ -1,7 +1,7 @@
 pippeline{
   agent any{
     stages{
-      stage("build"){
+      stage('build'){
         steps{
           // Some example for node JS
           // sh 'npm install'
@@ -9,12 +9,12 @@ pippeline{
           echo 'building your appliactions.....'
         } 
       }
-      stage("test"){
+      stage('test'){
         steps{
           echo 'testing your application.....'
         } 
       }
-      stage("deploy"){
+      stage('deploy'){
         steps{
           echo 'deployment in progress.....'
         } 
