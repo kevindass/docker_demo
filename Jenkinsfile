@@ -1,6 +1,6 @@
 pippeline{
   agent any{
-    stage{
+    stages{
       stage("build"){
         steps{
           // Some example for node JS
