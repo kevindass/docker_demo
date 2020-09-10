@@ -5,9 +5,11 @@ pipeline{
         }
     stages{
       stage('dependencies'){
-        echo 'installing your dependencies.....'
-        echo 'installing nodejs.....'
-        sh 'npm config ls'
+        steps{
+          echo 'installing your dependencies.....'
+          echo 'installing nodejs.....'
+          sh 'npm config ls'
+        }
       }
       stage('build'){
         steps{
