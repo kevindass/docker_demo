@@ -1,6 +1,14 @@
 pipeline{
   agent any
+  tools {
+    nodejs "node"
+        }
     stages{
+      stage('dependencies'){
+        echo 'installing your dependencies.....'
+        echo 'installing nodejs.....'
+        sh 'npm config ls'
+      }
       stage('build'){
         steps{
           // Some example for node JS
