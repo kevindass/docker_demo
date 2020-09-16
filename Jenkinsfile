@@ -10,6 +10,8 @@ pipeline{
           echo 'installing nodejs.....'
           sh 'npm config ls'
           sh 'npm --v'
+          echo 'installing cypress'
+          sh 'npm install cypress --save-dev'
           sh 'cypress -v'
         }
       }
