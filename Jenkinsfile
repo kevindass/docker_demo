@@ -12,7 +12,6 @@ pipeline{
           sh 'npm --v'
           echo 'installing cypress'
           sh 'npm install cypress --save-dev'
-          sh 'cypress -v'
         }
       }
       stage('build'){
@@ -31,6 +30,7 @@ pipeline{
       stage('deploy'){
         steps{
           echo 'deployment in progress.....'
+                   sh 'cypress -v'
         } 
       }
     }
