@@ -30,7 +30,6 @@ pipeline{
       stage('deploy'){
         steps{
           echo 'deployment in progress.....'
-                   sh 'cypress -v'
         } 
       }
     }
