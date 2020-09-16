@@ -10,6 +10,7 @@ pipeline{
           echo 'installing nodejs.....'
           sh 'npm config ls'
           sh 'npm --v'
+          sh 'cypress -v'
         }
       }
       stage('build'){
