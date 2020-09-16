@@ -9,6 +9,7 @@ pipeline{
           echo 'installing your dependencies.....'
           echo 'installing nodejs.....'
           sh 'npm config ls'
+          sh 'npm --v'
         }
       }
       stage('build'){
