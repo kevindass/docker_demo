@@ -27,6 +27,7 @@ pipeline{
       stage('test'){
         steps{
           echo 'testing your application.....'
+          sh 'cypress run'
         } 
       }
       stage('deploy'){
