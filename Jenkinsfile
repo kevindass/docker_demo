@@ -6,12 +6,14 @@ pipeline{
     stages{
       stage('dependencies'){
         steps{
-          echo 'installing your dependencies.....'
-          echo 'installing nodejs.....'
+          echo 'check & instal your dependencies.....'
+          echo 'project path'
+          sh 'pwd'
           sh 'npm config ls'
+          echo 'check nodejs.....'
           sh 'npm --v'
-          echo 'installing cypress'
-          sh 'npm install cypress --save-dev'
+          echo 'check cypress version'
+          sh 'cypress -v'
         }
       }
       stage('build'){
