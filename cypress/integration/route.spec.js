@@ -28,7 +28,7 @@ describe('Route Testing in UI5', function() {
         cy.visit('https://openui5.hana.ondemand.com/test-resources/sap/m/demokit/master-detail/webapp/test/mockServer.html') 
         cy.wait('@metadata')
 
-        cy.get('lineItemsTitle')
+        //cy.get('lineItemsTitle')
         //cy.get('#container-masterdetail---detail--lineItemsTitle')
         //cy.get('container-masterdetail---detail--lineItemsTitle')
     })
