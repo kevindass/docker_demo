@@ -12,8 +12,8 @@ pipeline{
           sh 'npm config ls'
           echo 'check nodejs.....'
           sh 'npm --v'
-          echo 'check cypress version'
-          sh 'cypress -v'
+          echo 'check uiveri5 version'
+          sh 'uiveri5 -v'
         }
       }
       stage('build'){
