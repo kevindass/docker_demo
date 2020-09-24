@@ -27,6 +27,8 @@ pipeline{
       stage('test'){
         steps{
           echo 'testing your application.....'
+          echo 'App name: OpenUI5 sample Master Detail'
+          echo 'App URL: https://openui5.hana.ondemand.com/test-resources/sap/m/demokit/master-detail/'
           sh 'cypress run'
         } 
       }
